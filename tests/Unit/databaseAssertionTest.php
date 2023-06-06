@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 
 class databaseAssertionTest extends TestCase
 {
@@ -16,7 +16,7 @@ class databaseAssertionTest extends TestCase
         $email = 'test_git@gmail.com';
 
         // Assert that a user with the specified email exists in the database
-        $this->assertDatabaseHas('uzers', [
+        $this->assertDatabaseHas('users', [
             'email' => $email,
         ]);
     }
