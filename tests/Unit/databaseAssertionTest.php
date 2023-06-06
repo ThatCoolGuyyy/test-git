@@ -13,6 +13,11 @@ class databaseAssertionTest extends TestCase
      */
     public function test_example()
     {
-        $this->assertTrue(true);
+        $email = 'johndoe@example.com';
+
+        // Assert that a user with the specified email exists in the database
+        $this->assertDatabaseHas('users', [
+            'email' => $email,
+        ]);
     }
 }
