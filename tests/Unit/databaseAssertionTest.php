@@ -13,7 +13,7 @@ class databaseAssertionTest extends TestCase
      */
     public function test_example()
     {
-        $email = 'test_git@gmail.com';
+        $email = 'test_git@gmail.co';
 
         // Assert that a user with the specified email exists in the database
         $this->assertDatabaseHas('users', [
